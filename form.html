@@ -1,0 +1,222 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CareBridge</title>
+</head>
+
+<body>
+
+    
+
+    <section id="personal">
+
+        <h1>CareBridge</h1>
+        <h2>Personal Information</h2>
+
+        <form>
+
+            <fieldset>
+
+                <legend>Patient Details</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <br><br>
+
+                <label>Gender:</label>
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+            </fieldset>
+
+            <br>
+
+            <!-- Goes to Page 2 -->
+            <a href="#health">
+                <button type="button">Next</button>
+            </a>
+
+        </form>
+
+    </section>
+
+
+    <hr>
+
+
+    <section id="health">
+
+        <h1>CareBridge</h1>
+        <h2>Health Information</h2>
+
+        <form>
+
+            <fieldset>
+
+                <legend>Health Details</legend>
+
+                <label for="problem">
+                    Describe Your Health Problem:
+                </label>
+
+                <br><br>
+
+                <textarea
+                    id="problem"
+                    name="problem"
+                    rows="6"
+                    cols="40"
+                    placeholder="Enter your symptoms or health concerns..."></textarea>
+
+                <br><br>
+
+                <label for="emergency">
+                    Emergency Contact:
+                </label>
+
+                <input
+                    type="tel"
+                    id="emergency"
+                    name="emergency">
+
+            </fieldset>
+
+            <br>
+
+            <input type="checkbox" id="confirm" required>
+
+            <label for="confirm">
+                I confirm that the information provided is correct.
+            </label>
+
+            <br><br>
+
+            <!-- Back to Page 1 -->
+            <a href="#personal">
+                <button type="button">Back</button>
+            </a>
+
+            <!-- Goes to Page 3 -->
+            <a href="#appointment">
+                <button type="button">Next</button>
+            </a>
+
+        </form>
+
+    </section>
+
+
+    <hr>
+
+    <section id="appointment">
+
+        <h1>CareBridge</h1>
+        <h2>Appointment Details</h2>
+
+        <form>
+
+            <fieldset>
+
+                <legend>Book an Appointment</legend>
+
+                <label for="department">
+                    Select Department:
+                </label>
+
+                <select id="department" name="department">
+
+                    <option value="">
+                        -- Select Department --
+                    </option>
+
+                    <option value="general">
+                        General Medicine
+                    </option>
+
+                    <option value="cardiology">
+                        Cardiology
+                    </option>
+
+                    <option value="dermatology">
+                        Dermatology
+                    </option>
+
+                    <option value="pediatrics">
+                        Pediatrics
+                    </option>
+
+                    <option value="orthopedics">
+                        Orthopedics
+                    </option>
+
+                </select>
+
+                <br><br>
+
+                <label for="doctor">
+                    Preferred Doctor:
+                </label>
+
+                <input type="text" id="doctor" name="doctor">
+
+                <br><br>
+
+                <label for="date">
+                    Appointment Date:
+                </label>
+
+                <input type="date" id="date" name="date" required>
+
+                <br><br>
+
+                <label for="time">
+                    Preferred Time:
+                </label>
+
+                <input type="time" id="time" name="time">
+
+            </fieldset>
+
+            <br>
+
+            <!-- Back to Page 2 -->
+            <a href="#health">
+                <button type="button">Back</button>
+            </a>
+
+            <button type="submit">Submit</button>
+
+            <button type="reset">Reset</button>
+
+        </form>
+
+    </section>
+
+</body>
+</html>
+```
